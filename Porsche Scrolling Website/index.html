@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche Scrolling Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo" >Porsche</a>
+      <ul class="navigation">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <section class="parallax">
+      <h2 id="text">Porsche Cayman GT4 RS</h2>
+       <img src="d1.jpg" id="m1">
+      <img src="ana foto1.jpg" id="man">
+    </section>
+    <section class="sec">
+      <h2>Porsche Cayman GT4 RS</h2>
+      <p>ARTIK DAHA DA GÜÇLÜ<br><br>
+        911 GT3 Cup yarış otomobilinde sunulan altı silindirli motor, spor otomobilin en önemli parçasını oluşturuyor. Motor devri 9.000 rpm'ye kadar çıkıyor. 6.000 rpm’de 465 NM tork değerine ulaşıyor. 718 Cayman GT4 ile karşılaştırıldığında, 718 Cayman GT4 RS ekstra 80 PS güç üreterek 2,83 kg/PS seviyesinde bir ağırlık-güç oranı yakalıyor. 
+        <br><br>SIFIRDAN 100’E 3,4 SANİYE<br><br>
+        718 Cayman GT4 RS 0'dan 100 km/sa hıza yalnızca 3,4 saniyede (PDK'lı GT4: 3,9 saniye) çıkıyor ve yedinci viteste 315 km/sa azami hıza (PDK'lı GT4: 302 km/s) ulaşıyor. Kaput ve ön kanatlar gibi bileşenlerde karbon fiber takviyeli plastik (CFRP) kullanımı sayesinde ağırlık azaltılıyor. Hafif halıların 
+        yanı sıra yalıtım malzemesinin azaltılması da ağırlığın azaltılmasına katkı sağlıyor. Arka cam daha hafif bir malzemeden imal edilmiş.<br><br>
+        YARIŞ OTOMOBİLLERİNDEN GÜNLÜK KULLANIMA<br><br>
+        Yeni sabit arka kanat, kuğu boynu eklentisi ve alüminyum kanat destekleri dış tasarımın ayırt edici unsurları arasında yer alıyor. Porsche 911 RSR GT yarış otomobilinden esinlenilerek tasarlanan bu yüksek verimli kanat ilk olarak 911 GT3’le bir Porsche seri üretim otomobilinde kullanılmaya başlanmıştı </p>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script>
+       gsap.from("#m1",{
+      scrollTrigger : {
+           scrub: true
+         },
+         width: 750,
+         x:1150,
+         y: -10,
+         
+       })
+      gsap.from("#man",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: -780,
+      })
+       gsap.from("#text",{
+        scrollTrigger : {
+           scrub: true
+         },
+         y:-150,
+         x: 500,
+       })
+    </script>
+  </body>
+</html>
